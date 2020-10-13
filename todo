@@ -1,5 +1,12 @@
+copy control program from stock-api
+write parsing code to get latest episodes from the rtvc site
+control program could maintain a database of the episodes retrieved
+control program writes rss feed file which is served by nginx
+nginx also serves mp3 files 
 code to look for updates of the content
 code to clean up downloaded content
+code to check consistency between database and mp3 files
 run periodically
 generate rss file
 serve rss file using nginx rss.davidgma.com
+server shouldn't be needed at all - nginx should do everything
