@@ -1,0 +1,5 @@
+code to look for updates of the content
+code to clean up downloaded content
+run periodically
+generate rss file
+serve rss file using nginx rss.davidgma.com

@@ -1,3 +1,7 @@
+/build
+1run-server
+2run-control
+
 # Logs
 logs
 *.log
