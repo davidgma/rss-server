@@ -4,7 +4,7 @@
         <title>Una Más Uno</title>
         <link>http://rss.davidgma.com/unamasuno/</link>
         <description>Daily news and chat show with Kiko Barroso.</description>
-        <lastBuildDate>Wed, 14 Oct 2020 10:19:09 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Oct 2020 10:36:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -30,19 +30,19 @@
             <title><![CDATA[Una Más Uno 09/10/2020]]></title>
             <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO091020.mp3</link>
             <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO091020.mp3</guid>
-            <pubDate>Wed, 09 Sep 2020 23:00:00 GMT</pubDate>
+            <pubDate>Thu, 10 Sep 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Una Más Uno 08/10/2020]]></title>
             <link>http://www.rtvc.es/ProgramacionFVA/14330_UNA_MAS_UNO_081020.mp3</link>
             <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNA_MAS_UNO_081020.mp3</guid>
-            <pubDate>Sun, 09 Aug 2020 23:00:00 GMT</pubDate>
+            <pubDate>Mon, 10 Aug 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Una Más Uno 07/10/2020]]></title>
             <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO071020.mp3</link>
             <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO071020.mp3</guid>
-            <pubDate>Thu, 09 Jul 2020 23:00:00 GMT</pubDate>
+            <pubDate>Fri, 10 Jul 2020 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

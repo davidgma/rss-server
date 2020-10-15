@@ -93,7 +93,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
             
 
 <div class="autopromo" style="">
-    <a id="ctl00_adsLateral_promoLeft_HyperLink1" onclick="javascript:pageTracker._trackEvent('Brisa Motor','Clic','BannersNissanJukeTVC2021Brisa.jpg', 0);" href="http://red.nissan.es/brisamotor/vehiculos-ocasion" target="_blank"><img id="ctl00_adsLateral_promoLeft_Autopromo1" src="/bannerfva/BannersNissanJukeTVC2021Brisa.jpg" style="height:800px;width:120px;border-width:0px;" /></a>
+    <a id="ctl00_adsLateral_promoLeft_HyperLink1" onclick="javascript:pageTracker._trackEvent('Arimotor Tenerife','Clic','BannersNissanJukeTVC2021Ari.jpg', 0);" href="http://red.nissan.es/arimotortenerife/formulario/ofertavn?nidofertavn=7521" target="_blank"><img id="ctl00_adsLateral_promoLeft_Autopromo1" src="/bannerfva/BannersNissanJukeTVC2021Ari.jpg" style="height:800px;width:120px;border-width:0px;" /></a>
     
 </div>
 
@@ -103,7 +103,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
             
 
 <div class="autopromo" style="">
-    <a id="ctl00_adsLateral_promoRight_HyperLink1" onclick="javascript:pageTracker._trackEvent('Brisa Motor','Clic','BannersNissanJukeTVC2021Brisa.jpg', 0);" href="http://red.nissan.es/brisamotor/vehiculos-ocasion" target="_blank"><img id="ctl00_adsLateral_promoRight_Autopromo1" src="/bannerfva/BannersNissanJukeTVC2021Brisa.jpg" style="height:800px;width:120px;border-width:0px;" /></a>
+    <a id="ctl00_adsLateral_promoRight_HyperLink1" onclick="javascript:pageTracker._trackEvent('Arimotor Tenerife','Clic','BannersNissanJukeTVC2021Ari.jpg', 0);" href="http://red.nissan.es/arimotortenerife/formulario/ofertavn?nidofertavn=7521" target="_blank"><img id="ctl00_adsLateral_promoRight_Autopromo1" src="/bannerfva/BannersNissanJukeTVC2021Ari.jpg" style="height:800px;width:120px;border-width:0px;" /></a>
     
 </div>
 
@@ -711,8 +711,8 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
 
 <script type="text/javascript">
 //<![CDATA[
-pageTracker._trackEvent('Brisa Motor','Impresion','BannersNissanJukeTVC2021Brisa.jpg', 0);
-pageTracker._trackEvent('Brisa Motor','Impresion','BannersNissanJukeTVC2021Brisa.jpg', 0);
+pageTracker._trackEvent('Arimotor Tenerife','Impresion','BannersNissanJukeTVC2021Ari.jpg', 0);
+pageTracker._trackEvent('Arimotor Tenerife','Impresion','BannersNissanJukeTVC2021Ari.jpg', 0);
 //]]>
 </script>
 <script type="text/javascript">
