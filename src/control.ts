@@ -4,7 +4,8 @@
 import { DatabaseService } from './db-service';
 import { RtvcParser } from './rtvc-parse';
 import { Feed } from "feed";
-import { writeFile } from 'fs';
+import { writeFile } from 'fs'; 
+import { homedir } from 'os';
 
 export class Controller {
     #dbs = new DatabaseService("files.db");
@@ -51,7 +52,8 @@ export class Controller {
             });
         }
 
-        writeFile("./data/unamasuno.rss", this.#feed.rss2(), (err) => {
+
+        writeFile(homedir + "/local/dev/rss-server/data/unamasuno.rss", this.#feed.rss2(), (err) => {
             if (err) {
                 console.log("Error writing rss file: " + err.message);
             }

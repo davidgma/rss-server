@@ -2,6 +2,7 @@ import { get } from 'http';
 import { stringify } from 'querystring';
 import { parse as htmlParse, HTMLElement as parsedElement } from 'node-html-parser';
 import { writeFile, createWriteStream } from 'fs';
+import { homedir } from 'os';
 
 export interface IEpisodeLink {
   episodeDate: string;
@@ -31,7 +32,7 @@ export class RtvcParser {
         });
         res.on('end', () => {
           // console.log(content);
-          writeFile("./data/tmp_getEpisodeLinks_html.txt", content, (err) => {
+          writeFile(homedir + "/local/dev/rss-server/data/tmp_getEpisodeLinks_html.txt", content, (err) => {
             if (err)
               console.log("Error: " + err);
             // else
@@ -84,7 +85,7 @@ export class RtvcParser {
         });
         res.on('end', () => {
           // console.log(content);
-          writeFile("./data/tmp_getDownloadLink_html.txt", content, (err) => {
+          writeFile(homedir + "/local/dev/rss-server/data/tmp_getDownloadLink_html.txt", content, (err) => {
             if (err)
               console.log("Error: " + err);
           });

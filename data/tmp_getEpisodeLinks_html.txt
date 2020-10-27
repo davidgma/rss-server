@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="ctl00_Head1"><title>
-	Una mas Uno 13/10/2020 Multimedia – RTVC.es – RadioTelevisiónCanaria
+	Una mas Uno 27/10/2020 Multimedia – RTVC.es – RadioTelevisiónCanaria
 </title><link href="/public/css/style-all_v3.css" rel="stylesheet" type="text/css" /><link rel="stylesheet" type="text/css" href="/public/css/style-interstitial.css" /><link href="/public/css/slidePresentadores.css" rel="stylesheet" type="text/css" /><link href="/public/css/slideProgramacion.css" rel="stylesheet" type="text/css" /><link href="/public/css/slideGente.css" rel="stylesheet" type="text/css" />
     <link href="/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
     <style type="text/css">
@@ -93,7 +93,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
             
 
 <div class="autopromo" style="">
-    <a id="ctl00_adsLateral_promoLeft_HyperLink1" onclick="javascript:pageTracker._trackEvent('Arimotor Tenerife','Clic','BannersNissanJukeTVC2021Ari.jpg', 0);" href="http://red.nissan.es/arimotortenerife/formulario/ofertavn?nidofertavn=7521" target="_blank"><img id="ctl00_adsLateral_promoLeft_Autopromo1" src="/bannerfva/BannersNissanJukeTVC2021Ari.jpg" style="height:800px;width:120px;border-width:0px;" /></a>
+    <a id="ctl00_adsLateral_promoLeft_HyperLink1" onclick="javascript:pageTracker._trackEvent('Arimotor Tenerife','Clic','arimotor.jpg', 0);" href="http://red.nissan.es/arimotortenerife/formulario/ofertavn?nidofertavn=7521" target="_blank"><img id="ctl00_adsLateral_promoLeft_Autopromo1" src="/bannerfva/arimotor.jpg" style="height:800px;width:120px;border-width:0px;" /></a>
     
 </div>
 
@@ -103,7 +103,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
             
 
 <div class="autopromo" style="">
-    <a id="ctl00_adsLateral_promoRight_HyperLink1" onclick="javascript:pageTracker._trackEvent('Arimotor Tenerife','Clic','BannersNissanJukeTVC2021Ari.jpg', 0);" href="http://red.nissan.es/arimotortenerife/formulario/ofertavn?nidofertavn=7521" target="_blank"><img id="ctl00_adsLateral_promoRight_Autopromo1" src="/bannerfva/BannersNissanJukeTVC2021Ari.jpg" style="height:800px;width:120px;border-width:0px;" /></a>
+    <a id="ctl00_adsLateral_promoRight_HyperLink1" onclick="javascript:pageTracker._trackEvent('Arimotor Tenerife','Clic','arimotor.jpg', 0);" href="http://red.nissan.es/arimotortenerife/formulario/ofertavn?nidofertavn=7521" target="_blank"><img id="ctl00_adsLateral_promoRight_Autopromo1" src="/bannerfva/arimotor.jpg" style="height:800px;width:120px;border-width:0px;" /></a>
     
 </div>
 
@@ -353,9 +353,13 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
 			</div>
 			
 		
-		
+		<div class="destacadoCabecera">
+				<a href="http://rtvc.es/corporativa/Acuerdo_AU_reanudación_proced_selección_Director_informativos_TVPC.pdf" target="_blank">ACUERDO DEL ADMINISTRADOR ÚNICO DEL ENTE PÚBLICO RTVC Y SUS SOCIEDADES MERCANTILES POR EL QUE SE ACUERDA LA REANUDACIÓN DEL PROCEDIMIENTO DE SELECCIÓN DEL PUESTO DIRECTOR/A DE LOS SERVICIOS INFORMATIVOS DE TELEVISIÓN PÚBLICA DE CANARIAS, S.A.</a>
+			</div>
 			
-		
+		 <div class="destacadoCabecera">
+				<a href="http://rtvc.es/corporativa/Acuerdo_AU_reanudación_proced_selección_Director_Informativos_RPC.pdf" target="_blank">ACUERDO DEL ADMINISTRADOR ÚNICO DEL ENTE PÚBLICO RTVC Y SUS SOCIEDADES MERCANTILES POR EL QUE SE ACUERDA LA REANUDACIÓN DEL PROCEDIMIENTO DE SELECCIÓN DEL PUESTO DIRECTOR/A DE LOS SERVICIOS INFORMATIVOS DE RADIO PÚBLICA DE CANARIAS, S.A.</a>
+			</div>
 			
 			
 			
@@ -371,7 +375,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
                 
     <div class="section player">  
         <div id="pnlWMP1">   
-            <div id="ctl00_content_reproductor" class="rep_wrapper"><audio style='background: url(http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2fnoimagen.jpg&width=980&height=555&fill=False) no-repeat;' controls='controls' autoplay><source src='http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO131020.mp3' type='audio/mpeg' />
+            <div id="ctl00_content_reproductor" class="rep_wrapper"><audio style='background: url(http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2fnoimagen.jpg&width=980&height=555&fill=False) no-repeat;' controls='controls' autoplay><source src='http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO271020.mp3' type='audio/mpeg' />
                         <div class='player'>                                        
                         <object data='data:application/x-silverlight-2,' type='application/x-silverlight-2' width='100%' height='100%'>
 		                  <param name='source' value='/ClientBin/RTVCPlayer.xap' />
@@ -380,7 +384,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
 		                  <param name='minRuntimeVersion' value='3.0.40624.0' />
 		                  <param name='autoUpgrade' value='true' />
 		                  <param name='Windowless' value='true' />
-		                  <param name='initParams' value='m=http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO131020.mp3,thumbnail=http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2fnoimagen.jpg&width=980&height=555&fill=False,autostart=false' />
+		                  <param name='initParams' value='m=http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO271020.mp3,thumbnail=http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2fnoimagen.jpg&width=980&height=555&fill=False,autostart=false' />
 		                  <a href='http://go.microsoft.com/fwlink/?LinkID=149156&v=3.0.40624.0' target='_blank' style='text-decoration:none'>
  			                  <img src='http://go.microsoft.com/fwlink/?LinkId=108181' alt='Get Microsoft Silverlight' style='border-style:none'/>
 		                  </a>
@@ -391,7 +395,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
             <input name="ctl00$content$showPlayer" type="hidden" id="ctl00_content_showPlayer" class="showPlayer" value="True" />
             <input type="hidden" id="imgSelected" class="imgSelected" value='http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2fnoimagen.jpg&width=980&height=555&fill=False' />  
             <input type="hidden" id="hidden_canal" class="hidden_canal" value='audio' />
-            <input type="hidden" id="hidden_url" class="hidden_url" value='http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO131020.mp3' />
+            <input type="hidden" id="hidden_url" class="hidden_url" value='http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO271020.mp3' />
             <input type="hidden" id="hidden_baseurl" class="hidden_baseurl" value='http://www.rtvc.es/ProgramacionFVA/' />
             <input name="ctl00$content$hidden_spoturl" type="hidden" id="ctl00_content_hidden_spoturl" class="hidden_spoturl" />
             <input name="ctl00$content$hidden_spottext" type="hidden" id="ctl00_content_hidden_spottext" class="hidden_spottext" />
@@ -404,7 +408,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
     <div class="videotecaemision orange">
         <div class="buttons section">
             <a href="/canariasradio/multimedia.aspx" class="button">VOLVER A VIDEOTECA</a>
-            <a href="/handlers/DownloadHandler.ashx?src=/ProgramacionFVA/14330_UNAMASUNO131020.mp3" id="ctl00_content_urldescarga" class="button">DESCARGAR</a>
+            <a href="/handlers/DownloadHandler.ashx?src=/ProgramacionFVA/14330_UNAMASUNO271020.mp3" id="ctl00_content_urldescarga" class="button">DESCARGAR</a>
             <a href="/rss/television/programa/14330.aspx" class="button">SUSCRIBIRSE</a>
             <!-- AddThis Button BEGIN -->
             <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
@@ -446,6 +450,86 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
                     
                         <li id="selected" 
                              class="filteredList selected">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/27-10-2020-38.aspx' >
+                                <p class="fecha">27/10/2020</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/27-10-2020-37.aspx' >
+                                <p class="fecha">27/10/2020</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/23-10-2020-36.aspx' >
+                                <p class="fecha">23/10/2020</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/22-10-2020-35.aspx' >
+                                <p class="fecha">22/10/2020</p>
+                                <p class="sinopsis">UNA MAS UNO 221020</p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/21-10-2020-34.aspx' >
+                                <p class="fecha">21/10/2020</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/20-10-2020-33.aspx' >
+                                <p class="fecha">20/10/2020</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/19-10-2020-32.aspx' >
+                                <p class="fecha">19/10/2020</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/16-10-2020-31.aspx' >
+                                <p class="fecha">16/10/2020</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/15-10-2020-30.aspx' >
+                                <p class="fecha">15/10/2020</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/14-10-2020-29.aspx' >
+                                <p class="fecha">14/10/2020</p>
+                                <p class="sinopsis">UNA MAS UNO 141020</p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
                             <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/13-10-2020-28.aspx' >
                                 <p class="fecha">13/10/2020</p>
                                 <p class="sinopsis"></p>
@@ -711,8 +795,8 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
 
 <script type="text/javascript">
 //<![CDATA[
-pageTracker._trackEvent('Arimotor Tenerife','Impresion','BannersNissanJukeTVC2021Ari.jpg', 0);
-pageTracker._trackEvent('Arimotor Tenerife','Impresion','BannersNissanJukeTVC2021Ari.jpg', 0);
+pageTracker._trackEvent('Arimotor Tenerife','Impresion','arimotor.jpg', 0);
+pageTracker._trackEvent('Arimotor Tenerife','Impresion','arimotor.jpg', 0);
 //]]>
 </script>
 <script type="text/javascript">
