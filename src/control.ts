@@ -39,12 +39,20 @@ export class Controller {
     public async updateAll() {
         await this.createTableIfNotExist();
         let showName = "una-mas-uno-14330";
-        let episodes = await this.#parser.getEpisodeLinks(showName, 5);
+        let episodes = await this.#parser.getEpisodeLinks(showName, 10);
 
         for (let episode of episodes) {
             episode.downloadLink = await this.#parser.getDownloadLink(episode.episodeLink);
             console.log(JSON.stringify(episode));
-            let ed = new Date(episode.episodeDate);
+            //let ed = new Date(episode.episodeDate);
+            let year: number = Number.parseInt(episode.episodeDate.substring(6,10));
+            console.log("year:" + year);
+            let month: number = Number.parseInt(episode.episodeDate.substring(3,5));
+            console.log("month:" + month);
+            let day: number = Number.parseInt(episode.episodeDate.substring(0,2));
+            console.log("day:" + day);
+            let ed = new Date(year, month, day);
+            console.log("date: " + ed.toDateString());
             this.#feed.addItem({
               title: "Una Más Uno " + episode.episodeDate,
               link: episode.downloadLink,
