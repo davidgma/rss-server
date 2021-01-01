@@ -2,47 +2,29 @@
 <rss version="2.0">
     <channel>
         <title>Una Más Uno</title>
-        <link>http://rss.davidgma.com/unamasuno/</link>
+        <link>http://rss.davidgma.com/unamasuno.rss</link>
         <description>Daily news and chat show with Kiko Barroso.</description>
-        <lastBuildDate>Fri, 01 Jan 2021 11:48:15 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 01 Jan 2021 12:11:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <image>
             <title>Una Más Uno</title>
             <url>http://rss.davidgma.com/unamasuno.png</url>
-            <link>http://rss.davidgma.com/unamasuno/</link>
+            <link>http://rss.davidgma.com/unamasuno.rss</link>
         </image>
         <copyright>Canarias Radio RTVC</copyright>
         <item>
             <title><![CDATA[Una Más Uno 31/12/2020]]></title>
             <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO311220.mp3</link>
             <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO311220.mp3</guid>
-            <pubDate>Sun, 31 Jan 2021 00:00:00 GMT</pubDate>
+            <pubDate>Thu, 31 Dec 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Una Más Uno 30/12/2020]]></title>
             <link>http://www.rtvc.es/ProgramacionFVA/14330_UNA_MAS_UNO_301220.mp3</link>
             <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNA_MAS_UNO_301220.mp3</guid>
-            <pubDate>Sat, 30 Jan 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Una Más Uno 29/12/2020]]></title>
-            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNA_MAS_UNO_291220.mp3</link>
-            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNA_MAS_UNO_291220.mp3</guid>
-            <pubDate>Fri, 29 Jan 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Una Más Uno 28/12/2020]]></title>
-            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNA__UNO_281220.mp3</link>
-            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNA__UNO_281220.mp3</guid>
-            <pubDate>Thu, 28 Jan 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Una Más Uno 24/12/2020]]></title>
-            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNA_MAS_UNO_241220.mp3</link>
-            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNA_MAS_UNO_241220.mp3</guid>
-            <pubDate>Sun, 24 Jan 2021 00:00:00 GMT</pubDate>
+            <pubDate>Wed, 30 Dec 2020 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

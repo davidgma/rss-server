@@ -44,15 +44,10 @@ export class Controller {
         for (let episode of episodes) {
             episode.downloadLink = await this.#parser.getDownloadLink(episode.episodeLink);
             console.log(JSON.stringify(episode));
-            //let ed = new Date(episode.episodeDate);
             let year: number = Number.parseInt(episode.episodeDate.substring(6,10));
-            console.log("year:" + year);
-            let month: number = Number.parseInt(episode.episodeDate.substring(3,5));
-            console.log("month:" + month);
+            let month: number = Number.parseInt(episode.episodeDate.substring(3,5)) - 1;
             let day: number = Number.parseInt(episode.episodeDate.substring(0,2));
-            console.log("day:" + day);
             let ed = new Date(year, month, day);
-            console.log("date: " + ed.toDateString());
             this.#feed.addItem({
               title: "Una Más Uno " + episode.episodeDate,
               link: episode.downloadLink,
@@ -64,6 +59,18 @@ export class Controller {
         writeFile(homedir + "/local/dev/rss-server/data/unamasuno.rss", this.#feed.rss2(), (err) => {
             if (err) {
                 console.log("Error writing rss file: " + err.message);
+            }
+        });
+
+        writeFile(homedir + "/local/dev/rss-server/data/unamasuno.atom", this.#feed.atom1(), (err) => {
+            if (err) {
+                console.log("Error writing atom file: " + err.message);
+            }
+        });
+       
+        writeFile(homedir + "/local/dev/rss-server/data/unamasuno.json", this.#feed.json1(), (err) => {
+            if (err) {
+                console.log("Error writing json file: " + err.message);
             }
         });
 
@@ -90,18 +97,19 @@ export class Controller {
         return new Feed({
             title: "Una Más Uno",
             description: "Daily news and chat show with Kiko Barroso.",
-            id: "http://rss.davidgma.com/unamasuno/",
-            link: "http://rss.davidgma.com/unamasuno/",
-            language: "en", // optional, used only in RSS 2.0, possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
+            id: "http://rss.davidgma.com/unamasuno.rss",
+            link: "http://rss.davidgma.com/unamasuno.rss",
+            language: "en", 
+            // optional, used only in RSS 2.0, possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
             image: "http://rss.davidgma.com/unamasuno.png",
             // favicon: "http://example.com/favicon.ico",
             copyright: "Canarias Radio RTVC",
             // updated: new Date(2013, 6, 14), // optional, default = today
             // generator: "awesome", // optional, default = 'Feed for Node.js'
-            // feedLinks: {
-            //     json: "https://example.com/json",
-            //     atom: "https://example.com/atom"
-            // },
+            feedLinks: {
+                json: "http://rss.davidgma.com/unamasuno.json",
+                atom: "http://rss.davidgma.com/unamasuno.atom"
+            },
             // author: {
             //     name: "John Doe",
             //     email: "johndoe@example.com",

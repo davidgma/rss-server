@@ -1,6 +1,7 @@
 /build
 1run-server
 2run-control
+data
 
 # Logs
 logs
