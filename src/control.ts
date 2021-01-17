@@ -3,14 +3,15 @@
 
 import { DatabaseService } from './db-service';
 import { RtvcParser } from './rtvc-parse';
-import { Feed } from "feed";
+//import { Feed } from "feed";
+import { GoogleFeed } from './google-feed';
 import { writeFile } from 'fs'; 
 import { homedir } from 'os';
 
 export class Controller {
     #dbs = new DatabaseService("files.db");
     #parser = new RtvcParser();
-    #feed: Feed;
+    #feed: GoogleFeed;
 
     constructor() { 
         this.#feed = this.setUpFeed();
@@ -39,7 +40,7 @@ export class Controller {
     public async updateAll() {
         await this.createTableIfNotExist();
         let showName = "una-mas-uno-14330";
-        let episodes = await this.#parser.getEpisodeLinks(showName, 10);
+        let episodes = await this.#parser.getEpisodeLinks(showName, 2);
 
         for (let episode of episodes) {
             episode.downloadLink = await this.#parser.getDownloadLink(episode.episodeLink);
@@ -56,23 +57,24 @@ export class Controller {
         }
 
 
-        writeFile(homedir + "/local/dev/rss-server/data/unamasuno.rss", this.#feed.rss2(), (err) => {
+        writeFile(homedir + "/local/dev/rss-server/data/unamasuno.rss", 
+        this.#feed.rss2(), (err) => {
             if (err) {
                 console.log("Error writing rss file: " + err.message);
             }
         });
 
-        writeFile(homedir + "/local/dev/rss-server/data/unamasuno.atom", this.#feed.atom1(), (err) => {
-            if (err) {
-                console.log("Error writing atom file: " + err.message);
-            }
-        });
+        // writeFile(homedir + "/local/dev/rss-server/data/unamasuno.atom", this.#feed.atom1(), (err) => {
+        //     if (err) {
+        //         console.log("Error writing atom file: " + err.message);
+        //     }
+        // });
        
-        writeFile(homedir + "/local/dev/rss-server/data/unamasuno.json", this.#feed.json1(), (err) => {
-            if (err) {
-                console.log("Error writing json file: " + err.message);
-            }
-        });
+        // writeFile(homedir + "/local/dev/rss-server/data/unamasuno.json", this.#feed.json1(), (err) => {
+        //     if (err) {
+        //         console.log("Error writing json file: " + err.message);
+        //     }
+        // });
 
         // let episode = episodes[0];
         // await this.#parser.downloadMp3(episode.downloadLink, "./data/" 
@@ -93,8 +95,8 @@ export class Controller {
         // }
     }
 
-    private setUpFeed(): Feed {
-        return new Feed({
+    private setUpFeed(): GoogleFeed {
+        return new GoogleFeed({
             title: "Una Más Uno",
             description: "Daily news and chat show with Kiko Barroso.",
             id: "http://rss.davidgma.com/unamasuno.rss",

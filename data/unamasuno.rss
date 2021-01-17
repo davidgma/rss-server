@@ -4,7 +4,7 @@
         <title>Una Más Uno</title>
         <link>http://rss.davidgma.com/unamasuno.rss</link>
         <description>Daily news and chat show with Kiko Barroso.</description>
-        <lastBuildDate>Fri, 01 Jan 2021 12:11:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 17 Jan 2021 22:55:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -15,16 +15,16 @@
         </image>
         <copyright>Canarias Radio RTVC</copyright>
         <item>
-            <title><![CDATA[Una Más Uno 31/12/2020]]></title>
-            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO311220.mp3</link>
-            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO311220.mp3</guid>
-            <pubDate>Thu, 31 Dec 2020 00:00:00 GMT</pubDate>
+            <title><![CDATA[Una Más Uno 15/01/2021]]></title>
+            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO150121.mp3</link>
+            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO150121.mp3</guid>
+            <pubDate>Fri, 15 Jan 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Una Más Uno 30/12/2020]]></title>
-            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNA_MAS_UNO_301220.mp3</link>
-            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNA_MAS_UNO_301220.mp3</guid>
-            <pubDate>Wed, 30 Dec 2020 00:00:00 GMT</pubDate>
+            <title><![CDATA[Una Más Uno 14/01/2021]]></title>
+            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO140121.mp3</link>
+            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO140121.mp3</guid>
+            <pubDate>Thu, 14 Jan 2021 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
