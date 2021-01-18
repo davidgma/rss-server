@@ -40,7 +40,7 @@ export class Controller {
     public async updateAll() {
         await this.createTableIfNotExist();
         let showName = "una-mas-uno-14330";
-        let episodes = await this.#parser.getEpisodeLinks(showName, 2);
+        let episodes = await this.#parser.getEpisodeLinks(showName, 10);
 
         for (let episode of episodes) {
             episode.downloadLink = await this.#parser.getDownloadLink(episode.episodeLink);
