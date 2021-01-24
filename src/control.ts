@@ -64,6 +64,13 @@ export class Controller {
             }
         });
 
+        writeFile(homedir + "/local/dev/rss-server/data/unamasuno2.rss", 
+        this.#feed.rss2(), (err) => {
+            if (err) {
+                console.log("Error writing rss file: " + err.message);
+            }
+        });
+
         // writeFile(homedir + "/local/dev/rss-server/data/unamasuno.atom", this.#feed.atom1(), (err) => {
         //     if (err) {
         //         console.log("Error writing atom file: " + err.message);
