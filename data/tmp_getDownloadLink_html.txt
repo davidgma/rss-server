@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="ctl00_Head1"><title>
-	Una mas Uno 14/01/2021 Multimedia – RTVC.es – RadioTelevisiónCanaria
+	Una mas Uno 28/01/2021 Multimedia – RTVC.es – RadioTelevisiónCanaria
 </title><link href="/public/css/style-all_v3.css" rel="stylesheet" type="text/css" /><link rel="stylesheet" type="text/css" href="/public/css/style-interstitial.css" /><link href="/public/css/slidePresentadores.css" rel="stylesheet" type="text/css" /><link href="/public/css/slideProgramacion.css" rel="stylesheet" type="text/css" /><link href="/public/css/slideGente.css" rel="stylesheet" type="text/css" />
     <link href="/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
     <style type="text/css">
@@ -58,9 +58,9 @@
 	</script>
 	<!--/Cookie Consent-->
 	
-<meta property="og:site_name" content="RTVC" /><meta name="twitter:card" content="summary" /><meta name="twitter:site" content="@RTVCes" /><meta property="og:title" content="Una mas Uno" /><meta name="twitter:title" content="Una mas Uno" /><meta property="og:image" content="http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2f14330_mariakiko.jpg&amp;width=200&amp;height=200&amp;fill=False" /><meta name="twitter:image" content="http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2f14330_mariakiko.jpg&amp;width=200&amp;height=200&amp;fill=False" /><link rel="image_src" href="http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2f14330_mariakiko.jpg&amp;width=200&amp;height=200&amp;fill=False" /><meta property="og:url" content="http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/14-01-2021-92.aspx" /><meta property="og:description" content="Multimedia:  - 14/01/2021" /><meta name="twitter:description" content="Multimedia:  - 14/01/2021" /><script type='text/javascript' src='/javascript/silverlight.js'></script></head>
+<meta property="og:site_name" content="RTVC" /><meta name="twitter:card" content="summary" /><meta name="twitter:site" content="@RTVCes" /><meta property="og:title" content="Una mas Uno" /><meta name="twitter:title" content="Una mas Uno" /><meta property="og:image" content="http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2f14330_mariakiko.jpg&amp;width=200&amp;height=200&amp;fill=False" /><meta name="twitter:image" content="http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2f14330_mariakiko.jpg&amp;width=200&amp;height=200&amp;fill=False" /><link rel="image_src" href="http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2f14330_mariakiko.jpg&amp;width=200&amp;height=200&amp;fill=False" /><meta property="og:url" content="http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/28-01-2021-102.aspx" /><meta property="og:description" content="Multimedia:  - 28/01/2021" /><meta name="twitter:description" content="Multimedia:  - 28/01/2021" /><script type='text/javascript' src='/javascript/silverlight.js'></script></head>
 <body id="ctl00_Body" class="bck_dark datepickerBelow">
-    <form name="aspnetForm" method="post" action="/canariasradio/multimedia/una-mas-uno-14330/14-01-2021-92.aspx" id="aspnetForm">
+    <form name="aspnetForm" method="post" action="/canariasradio/multimedia/una-mas-uno-14330/28-01-2021-102.aspx" id="aspnetForm">
 <div>
 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNjUwNDczODAxZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAwUcY3RsMDAkbG9naW5idXR0b25zJGJ0bkVudmlhcgUeY3RsMDAkbG9naW5idXR0b25zJGNoYlJlY29yZGFyBSNjdGwwMCRidXNxdWVkYXBvcnRhZGExJEltYWdlQnV0dG9uMfRpIY01qAkuwX7K4k2iXsCKZzip" />
 </div>
@@ -93,7 +93,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
             
 
 <div class="autopromo" style="">
-    <a id="ctl00_adsLateral_promoLeft_HyperLink1" onclick="javascript:pageTracker._trackEvent('Brisa Motor','Clic','BannersJuke__brisa.jpg', 0);" href="http://red.nissan.es/brisamotor/vehiculos-nuevos/turismos/nuevo-juke#equipamiento-destacado" target="_blank"><img id="ctl00_adsLateral_promoLeft_Autopromo1" src="/bannerfva/BannersJuke__brisa.jpg" style="height:800px;width:120px;border-width:0px;" /></a>
+    <a id="ctl00_adsLateral_promoLeft_HyperLink1" onclick="javascript:pageTracker._trackEvent('Brisa Motor','Clic','brisa21.jpg', 0);" href="http://red.nissan.es/brisamotor/vehiculos-nuevos/turismos/nuevo-juke#ofertas-de-nissan-juke" target="_blank"><img id="ctl00_adsLateral_promoLeft_Autopromo1" src="/bannerfva/brisa21.jpg" style="height:800px;width:120px;border-width:0px;" /></a>
     
 </div>
 
@@ -103,7 +103,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
             
 
 <div class="autopromo" style="">
-    <a id="ctl00_adsLateral_promoRight_HyperLink1" onclick="javascript:pageTracker._trackEvent('Brisa Motor','Clic','BannersJuke__brisa.jpg', 0);" href="http://red.nissan.es/brisamotor/vehiculos-nuevos/turismos/nuevo-juke#equipamiento-destacado" target="_blank"><img id="ctl00_adsLateral_promoRight_Autopromo1" src="/bannerfva/BannersJuke__brisa.jpg" style="height:800px;width:120px;border-width:0px;" /></a>
+    <a id="ctl00_adsLateral_promoRight_HyperLink1" onclick="javascript:pageTracker._trackEvent('Brisa Motor','Clic','brisa21.jpg', 0);" href="http://red.nissan.es/brisamotor/vehiculos-nuevos/turismos/nuevo-juke#ofertas-de-nissan-juke" target="_blank"><img id="ctl00_adsLateral_promoRight_Autopromo1" src="/bannerfva/brisa21.jpg" style="height:800px;width:120px;border-width:0px;" /></a>
     
 </div>
 
@@ -364,7 +364,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
                 
     <div class="section player">  
         <div id="pnlWMP1">   
-            <div id="ctl00_content_reproductor" class="rep_wrapper"><audio style='background: url(http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2f14330_mariakiko.jpg&width=980&height=555&fill=False) no-repeat;' controls='controls' autoplay><source src='http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO140121.mp3' type='audio/mpeg' />
+            <div id="ctl00_content_reproductor" class="rep_wrapper"><audio style='background: url(http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2f14330_mariakiko.jpg&width=980&height=555&fill=False) no-repeat;' controls='controls' autoplay><source src='http://www.rtvc.es/ProgramacionFVA/14330_UNAUNO280121.mp3' type='audio/mpeg' />
                         <div class='player'>                                        
                         <object data='data:application/x-silverlight-2,' type='application/x-silverlight-2' width='100%' height='100%'>
 		                  <param name='source' value='/ClientBin/RTVCPlayer.xap' />
@@ -373,7 +373,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
 		                  <param name='minRuntimeVersion' value='3.0.40624.0' />
 		                  <param name='autoUpgrade' value='true' />
 		                  <param name='Windowless' value='true' />
-		                  <param name='initParams' value='m=http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO140121.mp3,thumbnail=http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2f14330_mariakiko.jpg&width=980&height=555&fill=False,autostart=false' />
+		                  <param name='initParams' value='m=http://www.rtvc.es/ProgramacionFVA/14330_UNAUNO280121.mp3,thumbnail=http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2f14330_mariakiko.jpg&width=980&height=555&fill=False,autostart=false' />
 		                  <a href='http://go.microsoft.com/fwlink/?LinkID=149156&v=3.0.40624.0' target='_blank' style='text-decoration:none'>
  			                  <img src='http://go.microsoft.com/fwlink/?LinkId=108181' alt='Get Microsoft Silverlight' style='border-style:none'/>
 		                  </a>
@@ -384,7 +384,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
             <input name="ctl00$content$showPlayer" type="hidden" id="ctl00_content_showPlayer" class="showPlayer" value="True" />
             <input type="hidden" id="imgSelected" class="imgSelected" value='http://www.rtvc.es/handlers/ThumbnailHandler.ashx?src=%2fprogramacionfva%2f14330_mariakiko.jpg&width=980&height=555&fill=False' />  
             <input type="hidden" id="hidden_canal" class="hidden_canal" value='audio' />
-            <input type="hidden" id="hidden_url" class="hidden_url" value='http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO140121.mp3' />
+            <input type="hidden" id="hidden_url" class="hidden_url" value='http://www.rtvc.es/ProgramacionFVA/14330_UNAUNO280121.mp3' />
             <input type="hidden" id="hidden_baseurl" class="hidden_baseurl" value='http://www.rtvc.es/ProgramacionFVA/' />
             <input name="ctl00$content$hidden_spoturl" type="hidden" id="ctl00_content_hidden_spoturl" class="hidden_spoturl" />
             <input name="ctl00$content$hidden_spottext" type="hidden" id="ctl00_content_hidden_spottext" class="hidden_spottext" />
@@ -397,7 +397,7 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
     <div class="videotecaemision orange">
         <div class="buttons section">
             <a href="/canariasradio/multimedia.aspx" class="button">VOLVER A VIDEOTECA</a>
-            <a href="/handlers/DownloadHandler.ashx?src=/ProgramacionFVA/14330_UNAMASUNO140121.mp3" id="ctl00_content_urldescarga" class="button">DESCARGAR</a>
+            <a href="/handlers/DownloadHandler.ashx?src=/ProgramacionFVA/14330_UNAUNO280121.mp3" id="ctl00_content_urldescarga" class="button">DESCARGAR</a>
             <a href="/rss/television/programa/14330.aspx" class="button">SUSCRIBIRSE</a>
             <!-- AddThis Button BEGIN -->
             <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
@@ -439,14 +439,158 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
                     
                         <li id="" 
                              class="filteredList ">
-                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/15-01-2021-93.aspx' >
-                                <p class="fecha">15/01/2021</p>
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/10-02-2021-111.aspx' >
+                                <p class="fecha">10/02/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/09-02-2021-110.aspx' >
+                                <p class="fecha">09/02/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/08-02-2021-109.aspx' >
+                                <p class="fecha">08/02/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/05-02-2021-108.aspx' >
+                                <p class="fecha">05/02/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/04-02-2021-107.aspx' >
+                                <p class="fecha">04/02/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/03-02-2021-106.aspx' >
+                                <p class="fecha">03/02/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/02-02-2021-105.aspx' >
+                                <p class="fecha">02/02/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/01-02-2021-104.aspx' >
+                                <p class="fecha">01/02/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/29-01-2021-103.aspx' >
+                                <p class="fecha">29/01/2021</p>
                                 <p class="sinopsis"></p>
                             </a>
                         </li> 
                     
                         <li id="selected" 
                              class="filteredList selected">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/28-01-2021-102.aspx' >
+                                <p class="fecha">28/01/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/27-01-2021-101.aspx' >
+                                <p class="fecha">27/01/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/26-01-2021-100.aspx' >
+                                <p class="fecha">26/01/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/25-01-2021-99.aspx' >
+                                <p class="fecha">25/01/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/22-01-2021-97.aspx' >
+                                <p class="fecha">22/01/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/21-01-2021-98.aspx' >
+                                <p class="fecha">21/01/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/20-01-2021-95.aspx' >
+                                <p class="fecha">20/01/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/19-01-2021-96.aspx' >
+                                <p class="fecha">19/01/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/18-01-2021-94.aspx' >
+                                <p class="fecha">18/01/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
+                            <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/15-01-2021-93.aspx' >
+                                <p class="fecha">15/01/2021</p>
+                                <p class="sinopsis"></p>
+                            </a>
+                        </li> 
+                    
+                        <li id="" 
+                             class="filteredList ">
                             <a href='http://www.rtvc.es/canariasradio/multimedia/una-mas-uno-14330/14-01-2021-92.aspx' >
                                 <p class="fecha">14/01/2021</p>
                                 <p class="sinopsis"></p>
@@ -1208,8 +1352,8 @@ var pageTracker = _gat._getTracker("UA-5933869-1");
 
 <script type="text/javascript">
 //<![CDATA[
-pageTracker._trackEvent('Brisa Motor','Impresion','BannersJuke__brisa.jpg', 0);
-pageTracker._trackEvent('Brisa Motor','Impresion','BannersJuke__brisa.jpg', 0);
+pageTracker._trackEvent('Brisa Motor','Impresion','brisa21.jpg', 0);
+pageTracker._trackEvent('Brisa Motor','Impresion','brisa21.jpg', 0);
 //]]>
 </script>
 <script type="text/javascript">
