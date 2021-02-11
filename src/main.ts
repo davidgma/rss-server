@@ -23,10 +23,10 @@ async function processArgs(argv: Arguments) {
     if (argv._.includes("update")) {
         await ctl.updateAll();
     }
-    else if (argv._.includes("list")) {
-        console.log("Listing symbols...");
-        await ctl.list();
-    }
+    // else if (argv._.includes("list")) {
+    //     console.log("Listing symbols...");
+    //     await ctl.list();
+    // }
     else {
         console.log("No command given.");
     }

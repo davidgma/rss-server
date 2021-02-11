@@ -4,16 +4,22 @@
         <title>Una Más Uno</title>
         <link>http://rss.davidgma.com/unamasuno.rss</link>
         <description>Daily news and chat show with Kiko Barroso.</description>
-        <lastBuildDate>Wed, 10 Feb 2021 23:35:32 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 11 Feb 2021 23:49:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
-        <language>en</language>
+        <language>es</language>
         <image>
             <title>Una Más Uno</title>
             <url>http://rss.davidgma.com/unamasuno.png</url>
             <link>http://rss.davidgma.com/unamasuno.rss</link>
         </image>
         <copyright>Canarias Radio RTVC</copyright>
+        <item>
+            <title><![CDATA[Una Más Uno 11/02/2021]]></title>
+            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO110221.mp3</link>
+            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO110221.mp3</guid>
+            <pubDate>Thu, 11 Feb 2021 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Una Más Uno 10/02/2021]]></title>
             <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO100221.mp3</link>
@@ -37,42 +43,6 @@
             <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO050221.mp3</link>
             <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO050221.mp3</guid>
             <pubDate>Fri, 05 Feb 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Una Más Uno 04/02/2021]]></title>
-            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO040221.mp3</link>
-            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO040221.mp3</guid>
-            <pubDate>Thu, 04 Feb 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Una Más Uno 03/02/2021]]></title>
-            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO030221.mp3</link>
-            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO030221.mp3</guid>
-            <pubDate>Wed, 03 Feb 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Una Más Uno 02/02/2021]]></title>
-            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO020221.mp3</link>
-            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO020221.mp3</guid>
-            <pubDate>Tue, 02 Feb 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Una Más Uno 01/02/2021]]></title>
-            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO010221.mp3</link>
-            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO010221.mp3</guid>
-            <pubDate>Mon, 01 Feb 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Una Más Uno 29/01/2021]]></title>
-            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO290121.mp3</link>
-            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAMASUNO290121.mp3</guid>
-            <pubDate>Fri, 29 Jan 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Una Más Uno 28/01/2021]]></title>
-            <link>http://www.rtvc.es/ProgramacionFVA/14330_UNAUNO280121.mp3</link>
-            <guid>http://www.rtvc.es/ProgramacionFVA/14330_UNAUNO280121.mp3</guid>
-            <pubDate>Thu, 28 Jan 2021 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

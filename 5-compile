@@ -16,3 +16,7 @@ echo $(which node) $(pwd)/build/main.js '$@' >> $name2
 
 chmod a+x $name2 
 
+# Copy the image files
+cp ./assets/*.png ./data
+
+
