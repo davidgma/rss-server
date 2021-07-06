@@ -1,10 +1,2 @@
 #!/bin/bash
-
-# make the data directory if it doesn't already exist
-mkdir -p data
-
-# copy across the assets
-cp -u ./assets/* ./data/
-
-#/home/david/.nvm/versions/node/v12.18.0/bin/node /home/david/local/dev/rss-server/build/main.js $@
-node ./build/main.js $@
+/home/david/.nvm/versions/node/v12.18.0/bin/node /home/david/local/dev/rss-server/build/main.js $@
