@@ -51,6 +51,13 @@ export class RadioUruguayFeed {
                 console.log("Error writing rss file: " + err.message);
             }
         });
+        writeFile(homedir + "/local/dev/rss-server/data/ru.rss", 
+        this.feed.rss2(), (err) => {
+            if (err) {
+                console.log("Error writing rss file: " + err.message);
+            }
+        });
+        
     }
 
     
