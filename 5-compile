@@ -2,6 +2,9 @@
 echo This compiles, but does not run, the program.
 tsc -p ./src/
 
+# Create the data directory if it doesn't already exist
+mkdir -p data
+
 # Create the run script for the server
 name1="1run-server"
 echo "#!/bin/bash" > $name1
@@ -12,7 +15,6 @@ chmod a+x $name1
 # Create the run script for the control program
 name2="2run-control"
 echo "#!/bin/bash" > $name2
-echo "mkdir -p data" >> $name2
 echo "cp -u ./assets/* ./data/" >> $name2
 echo $(which node) $(pwd)/build/main.js '$@' >> $name2
 
