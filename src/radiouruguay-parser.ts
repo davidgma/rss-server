@@ -53,6 +53,7 @@ export class Parser {
           let fileListing: parsedElement = root.querySelector('table');
           let files: parsedElement[] = fileListing.querySelectorAll('td');
           let mostRecentFileName = "";
+          let mostRecentFileDate = "";
           for (let file of files) {
             // console.log(file.innerHTML);
             let anchor: parsedElement = file.querySelector("a");
@@ -75,10 +76,21 @@ export class Parser {
                 if (fileDate.startsWith(year) 
                 && mostRecentFileName.endsWith("mp3")) {
                     //console.log("date: " + fileDate);
-                    results.push({
-                      "episodeDate": fileDate, "episodeLink": mostRecentFileName,
-                      "downloadLink": url + mostRecentFileName
-                    });
+                    mostRecentFileDate = fileDate;
+                  }
+                  // It's the size
+                  else if (fileDate.includes("M")
+                  && mostRecentFileName.endsWith("mp3")) {
+                    let fileSize = Number.parseFloat(fileDate);
+                    //console.log("size: " + fileSize);
+                    // Only take files greater than 20MB
+                    if (fileSize > 20) {
+                      results.push({
+                        "episodeDate": mostRecentFileDate, 
+                        "episodeLink": mostRecentFileName,
+                        "downloadLink": url + mostRecentFileName
+                      });
+                    }
                 }
             }
             counter++;
