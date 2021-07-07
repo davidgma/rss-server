@@ -19,7 +19,7 @@ export class RadioUruguayFeed {
             language: "es", 
             // optional, used only in RSS 2.0, possible values: 
             // http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
-            image: "http://rss.davidgma.com/" + this.nameCode + ".png",
+            image: "http://rss.davidgma.com/" + this.nameCode + "2.png",
             // favicon: "http://example.com/favicon.ico",
             copyright: this.title
         });

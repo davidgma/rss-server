@@ -83,8 +83,8 @@ export class Parser {
                   && mostRecentFileName.endsWith("mp3")) {
                     let fileSize = Number.parseFloat(fileDate);
                     //console.log("size: " + fileSize);
-                    // Only take files greater than 20MB
-                    if (fileSize > 20) {
+                    // Only take files 20MB and more
+                    if (fileSize >= 20) {
                       results.push({
                         "episodeDate": mostRecentFileDate, 
                         "episodeLink": mostRecentFileName,
