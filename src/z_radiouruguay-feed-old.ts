@@ -13,7 +13,7 @@ export class RadioUruguayFeed {
     public constructor() {
         this.feed = new Feed({
             title: this.title,
-            description: "Audio files from Radio Uruguay.",
+            description: "All mp3 files over 20MB from Radio Uruguay's Directory Listings.",
             id: "http://rss.davidgma.com/" + this.nameCode + ".rss",
             link: "http://rss.davidgma.com/" + this.nameCode + ".rss",
             language: "es", 
@@ -29,12 +29,14 @@ export class RadioUruguayFeed {
         let episodes = await this.parser.getEpisodeLinks();
         for (let episode of episodes) {
             console.log(JSON.stringify(episode));
-            let year: number = Number.parseInt(episode.episodeDate.substring(6,10));
-            let month: number = Number.parseInt(episode.episodeDate.substring(3,5)) - 1;
-            let day: number = Number.parseInt(episode.episodeDate.substring(0,2));
-            let ed = new Date(year, month, day);
-            let title = episode.title;
-            //console.log(title);
+            let year: number = Number.parseInt(episode.episodeDate.substring(0,4));
+            let month: number = Number.parseInt(episode.episodeDate.substring(5,7)) - 1;
+            let day: number = Number.parseInt(episode.episodeDate.substring(8,10));
+            let hour = Number.parseInt(episode.episodeDate.substring(11,13));
+            let minute = Number.parseInt(episode.episodeDate.substring(14,16));
+            let ed = new Date(year, month, day, hour, minute);
+            let title = episode.title.substring(0, episode.title.length - 4);
+            console.log(title);
             this.feed.addItem({
               title: title,
               link: episode.downloadLink,

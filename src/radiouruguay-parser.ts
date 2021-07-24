@@ -1,111 +1,170 @@
-import { get } from 'http';
-import { stringify } from 'querystring';
+//import { get } from 'https';
 import { parse as htmlParse, HTMLElement as parsedElement } from 'node-html-parser';
 import { writeFile, createWriteStream } from 'fs';
 import { homedir } from 'os';
+import { WebUtils } from './webutils';
 
 export interface IEpisodeLink {
   episodeDate: string;
-  episodeLink: string;
+  title: string;
+  description: string;
   downloadLink: string;
+}
+
+interface IProgram {
+  name: string;
+  link: string;
+}
+
+interface IEpisode {
+  name: string;
+  link: string;
+}
+
+interface IEpisodeInfo {
+  date: string,
+  link: string;
 }
 
 export class Parser {
 
-  constructor() { }
+  private webUtils: WebUtils;
+
+  constructor() {
+    this.webUtils = new WebUtils();
+  }
 
   public async getEpisodeLinks(maxToGet: number = 0) {
-    return new Promise<Array<IEpisodeLink>>((resolve, reject) => {
+    let results = new Array<IEpisodeLink>();
 
-      const options = {};
-      let content = "";
-      let results = new Array<IEpisodeLink>();
-      let counter = 0;
+    let url = "https://mediospublicos.uy/category/radio/radio-uruguay/";
+    let content = await this.webUtils.get(url);
+    const root: parsedElement = htmlParse(content);
 
-      const now = new Date();
-      let year = now.getFullYear().toFixed();
-      let monthN = now.getUTCMonth() + 1;
-      let month = monthN.toFixed();
-      if (monthN < 10) 
-      month = "0" + month;
+    // Get the list of programs available 
+    let subMenu: parsedElement = root.querySelector('div.sub-menu');
+    let programAnchors: Array<parsedElement>
+      = subMenu.querySelectorAll('a');
+    // console.log(subMenu.innerHTML);
+    let programs: Array<IProgram> = new Array<IProgram>();
+    for (let programAnchor of programAnchors) {
+      // console.log("innerText: " + anchor.innerText);
+      // console.log("outerHTML: " + anchor.outerHTML);
+      // console.log("innerHTML: " + anchor.innerHTML);
+      // console.log("attributes: " + JSON.stringify(anchor.attributes));
+      // console.log("href: " + anchor.attributes["href"]);
+      let programUrl = url + programAnchor.attributes["href"];
+      if (!programUrl.endsWith("/"))
+        programUrl += "/";
+      programs.push({
+        "name": programAnchor.innerText,
+        "link": programUrl
+      });
+    }
 
-      let url = "http://radiouruguay.uy/wp-content/uploads/" + year 
-      + "/" + month + "/";
-      console.log(url);
-      
-      const req = get(url, options, (res) => {
-        // console.log(`STATUS: ${res.statusCode}`);
-        // console.log(`HEADERS: ${JSON.stringify(res.headers)}`);
-        res.setEncoding('utf8');
-        res.on('data', (chunk) => {
-          // console.log(`BODY: ${chunk}`);
-          content += chunk;
-        });
-        res.on('end', () => {
-          //console.log("content: " + content);
-          writeFile(homedir + "/local/dev/rss-server/data/tmp_getEpisodeLinks_html.txt", content, (err) => {
-            if (err)
-              console.log("Error: " + err);
-            // else
-            //   console.log('Hello World > helloworld.txt');
-          });
-          const root: parsedElement = htmlParse(content);
-          let fileListing: parsedElement = root.querySelector('table');
-          let files: parsedElement[] = fileListing.querySelectorAll('td');
-          let mostRecentFileName = "";
-          let mostRecentFileDate = "";
-          for (let file of files) {
-            // console.log(file.innerHTML);
-            let anchor: parsedElement = file.querySelector("a");
-            // console.log("innerText: " + anchor.innerText);
-            // console.log("outerHTML: " + anchor.outerHTML);
-            // console.log("innerHTML: " + anchor.innerHTML);
-            // console.log("attributes: " + JSON.stringify(anchor.attributes));
-            // console.log("href: " + anchor.attributes["href"]);
-            if (anchor != null) {
-                //console.log("text: " + anchor.text);
-                let href = anchor.attributes["href"];
-                if (href != null) {
-                    mostRecentFileName = href;
-                }
-            }
-            let fileDate: string = "Not known";
-            let align = file.attributes["align"];
-            if (align != null) {
-                fileDate = file.text;
-                if (fileDate.startsWith(year) 
-                && mostRecentFileName.endsWith("mp3")) {
-                    //console.log("date: " + fileDate);
-                    mostRecentFileDate = fileDate;
-                  }
-                  // It's the size
-                  else if (fileDate.includes("M")
-                  && mostRecentFileName.endsWith("mp3")) {
-                    let fileSize = Number.parseFloat(fileDate);
-                    //console.log("size: " + fileSize);
-                    // Only take files 20MB and more
-                    if (fileSize >= 20) {
-                      results.push({
-                        "episodeDate": mostRecentFileDate, 
-                        "episodeLink": mostRecentFileName,
-                        "downloadLink": url + mostRecentFileName
-                      });
-                    }
-                }
-            }
-            counter++;
-            if (maxToGet > 0 && counter >= maxToGet) break;
+    // Get the list of episodes for each program
+    for (let program of programs) {
+      let episodes: Array<IEpisode> =
+        await this.getEpisodes(program.link);
+      console.log("GetEpisodes completed: " + program.name + ": " + episodes.length);
+
+      // Get the information for each episode
+      for (let episode of episodes) {
+        console.log("Episode: " + episode.name);
+        let info = await this.getEpisodeInfo(episode.link);
+        if (info.link != "not found") {
+          const result: IEpisodeLink = {
+            "title": program.name + ": " + episode.name,
+            "description": program.name + ": " + episode.name,
+            "episodeDate": info.date,
+            "downloadLink": info.link
+          };
+          console.log(result);
+          results.push(result);
+        }
+      }
+    }
+
+
+    return results;
+
+  }
+
+  private async getEpisodes(url: string): Promise<Array<IEpisode>> {
+
+    let episodes: Array<IEpisode> = new Array<IEpisode>();
+    console.log(url);
+
+    // First look for the title episode (h2 inside an a)
+    let content = await this.webUtils.get(url);
+    // console.log("content: " + content); 
+    const root: parsedElement = htmlParse(content);
+    let anchors = root.querySelectorAll('a');
+    for (let anchor of anchors) {
+      // console.log(anchor.innerHTML);
+      let h2 = anchor.querySelector('h2');
+      if (h2 != null) {
+        let episode: IEpisode = {
+          "name": h2.innerText,
+          "link": anchor.attributes["href"]
+        };
+        console.log(episode);
+        episodes.push(episode);
+      }
+    }
+
+    // Next look for the other episodes (a inside an h3)
+    let h3s = root.querySelectorAll("h3");
+    // console.log("h3s: " + h3s.length);
+    for (let h3 of h3s) {
+      let anchor2 = h3.querySelector("a");
+      if (anchor2 != null) {
+        const link = anchor2.attributes["href"];
+        if (link != null) {
+          let episode: IEpisode = {
+            "name": anchor2.innerText,
+            "link": link
           }
-          resolve(results);
-        });
-      });
+          console.log(episode);
+          episodes.push(episode);
 
-      req.on('error', (e) => {
-        console.error(`problem with request: ${e.message}`);
-        reject("Error getting episodes");
-      });
-      req.end();
-    });
+        }
+      }
+    }
+    return episodes;
+  }
+
+  private async getEpisodeInfo(url: string): Promise<IEpisodeInfo> {
+    // console.log(url);
+    let content = await this.webUtils.get(url);
+    const root: parsedElement = htmlParse(content);
+    const audio: parsedElement = root.querySelector('audio');
+    if (audio != null) {
+      const source: parsedElement = audio.querySelector('source');
+      if (source != null) {
+        const link = source.attributes["src"];
+
+        // Get the date of the episode
+        const ps = root.querySelectorAll('p');
+        for (let p of ps) {
+          const span = p.querySelector('.span-reading-time');
+          if (span != null) {
+            // console.log(p.innerText.substring(0,10));
+            // console.log(link);
+            let info: IEpisodeInfo = {
+              date: p.innerText.substring(0, 10),
+              link: link
+            };
+            return info;
+          }
+        }
+      }
+    }
+    let info: IEpisodeInfo = {
+      date: "not found",
+      link: "not found"
+    };
+    return info;
   }
 
 
