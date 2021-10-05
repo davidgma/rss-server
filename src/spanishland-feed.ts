@@ -33,7 +33,7 @@ export class SpanishlandFeed {
             let monthName = episode.episodeDate.substring(8,11);
             let month: number = "JanFebMarAprMayJunJulAugSepOctNovDec".indexOf(monthName) / 3;
             let day: number = Number.parseInt(episode.episodeDate.substring(5,7));
-            let ed = new Date(year, month, day, 12);
+            let ed = new Date(year, month, day, 3);
             let title = episode.title;
             //console.log(title);
             this.feed.addItem({
