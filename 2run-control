@@ -1,3 +1,0 @@
-#!/bin/bash
-cp -u ./assets/* ./data/
-/usr/bin/node /home/david/local/dev/rss-server/build/main.js $@

@@ -1,2 +1,0 @@
-#!/bin/bash
-/usr/bin/node /home/david/local/dev/rss-server/build/server.js $@
