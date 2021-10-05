@@ -3,6 +3,7 @@
 import { Feed } from "feed";
 import {RadioUruguayFeed } from './radiouruguay-feed';
 import {EspectadorFeed} from './espectador-feed';
+import {SpanishlandFeed} from './spanishland-feed';
 
 export class Controller {
 
@@ -14,6 +15,8 @@ export class Controller {
         let espectadorFeed = new EspectadorFeed();
         await espectadorFeed.updateFeed();
 
+        let spanishlandFeed = new SpanishlandFeed();
+        await spanishlandFeed.updateFeed();
     }
 
 } // end of class controller

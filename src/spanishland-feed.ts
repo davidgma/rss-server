@@ -1,19 +1,19 @@
 import { Feed } from "feed";
-import { Parser } from './espectador-parser';
+import { Parser } from './spanishland-parser';
 import { writeFile } from 'fs';
 import { homedir } from 'os';
 
-export class EspectadorFeed {
+export class SpanishlandFeed {
 
     private feed: Feed;
     private parser: Parser = new Parser();
-    private nameCode = "espectador";
-    private title = "El Espectador";
+    private nameCode = "spanishland";
+    private title = "SpanishLand School";
 
     public constructor() {
         this.feed = new Feed({
             title: this.title,
-            description: "Programas completas from El Espectador.",
+            description: "Audio files from SpanishLand School, with the dross edited out.",
             id: "http://rss.davidgma.com/" + this.nameCode + ".rss",
             link: "http://rss.davidgma.com/" + this.nameCode + ".rss",
             language: "es", 
@@ -27,19 +27,17 @@ export class EspectadorFeed {
     
     public async updateFeed() {
         let episodes = await this.parser.getEpisodeLinks();
-        //console.log("here");
         for (let episode of episodes) {
             console.log(JSON.stringify(episode));
-            let mp3Path = await this.parser.getDownloadLink(episode.downloadLink);
-            let year: number = Number.parseInt(episode.showDate.substring(6,10));
-            let month: number = Number.parseInt(episode.showDate.substring(3,5)) - 1;
-            let day: number = Number.parseInt(episode.showDate.substring(0,2));
+            let year: number = Number.parseInt(episode.episodeDate.substring(6,10));
+            let month: number = Number.parseInt(episode.episodeDate.substring(3,5)) - 1;
+            let day: number = Number.parseInt(episode.episodeDate.substring(0,2));
             let ed = new Date(year, month, day);
-            let title = episode.showName + " " + episode.showDate;
-            console.log("title: " + title);
+            let title = episode.title;
+            //console.log(title);
             this.feed.addItem({
               title: title,
-              link: mp3Path,
+              link: episode.downloadLink,
               date: ed  
             });
         }
@@ -51,12 +49,12 @@ export class EspectadorFeed {
                 console.log("Error writing rss file: " + err.message);
             }
         });
-        // writeFile(homedir + "/local/dev/rss-server/data/ru.rss", 
-        // this.feed.rss2(), (err) => {
-        //     if (err) {
-        //         console.log("Error writing rss file: " + err.message);
-        //     }
-        // });
+        writeFile(homedir + "/local/dev/rss-server/data/ru.rss", 
+        this.feed.rss2(), (err) => {
+            if (err) {
+                console.log("Error writing rss file: " + err.message);
+            }
+        });
         
     }
 
