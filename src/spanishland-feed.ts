@@ -29,10 +29,11 @@ export class SpanishlandFeed {
         let episodes = await this.parser.getEpisodeLinks();
         for (let episode of episodes) {
             console.log(JSON.stringify(episode));
-            let year: number = Number.parseInt(episode.episodeDate.substring(6,10));
-            let month: number = Number.parseInt(episode.episodeDate.substring(3,5)) - 1;
-            let day: number = Number.parseInt(episode.episodeDate.substring(0,2));
-            let ed = new Date(year, month, day);
+            let year: number = Number.parseInt(episode.episodeDate.substring(12,16));
+            let monthName = episode.episodeDate.substring(8,11);
+            let month: number = "JanFebMarAprMayJunJulAugSepOctNovDec".indexOf(monthName) / 3;
+            let day: number = Number.parseInt(episode.episodeDate.substring(5,7));
+            let ed = new Date(year, month, day, 12);
             let title = episode.title;
             //console.log(title);
             this.feed.addItem({
