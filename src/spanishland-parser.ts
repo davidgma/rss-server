@@ -34,30 +34,35 @@ export class Parser {
     let directLinkData = JSON.parse(directLinkDataText);
     let episodes = directLinkData.content;
     for (let episode of episodes) {
-        if (episode.name.endsWith("mp3")) {
-            const episodeLink: IEpisodeLink =  {
-                "episodeDate": episode.modified,
-                "title": episode.name,
-                "description": "Episode " + episode.name 
-                + " from Spanishland School, edited to remove the annoying dross.",
-                "downloadLink": url + episode.urlencodedname
-            };
-            console.log(episodeLink);
-            results.push(episodeLink);
-            // console.log(episode.name);
-            // console.log(episode.urlencodedname);
-            // console.log(episode.modified);
+      if (episode.name.endsWith("mp3")) {
+        const episodeLink: IEpisodeLink = {
+          "episodeDate": episode.modified,
+          "title": episode.name,
+          "description": "Episode " + episode.name
+            + " from Spanishland School, edited to remove the annoying dross.",
+          "downloadLink": url + episode.urlencodedname
+        };
+        console.log(episodeLink);
+        results.push(episodeLink);
+        // console.log(episode.name);
+        // console.log(episode.urlencodedname);
+        // console.log(episode.modified);
 
-        }
+      }
     }
-    
 
-
-    return results;
+    return results.sort(this.compareEpisodes);
 
   }
 
-  
+  private compareEpisodes(a: IEpisodeLink, b: IEpisodeLink): number {
+    if (a.title < b.title)
+      return 1;
+    if (a.title > b.title)
+      return -1;
+    return 0;
+
+  }
 
 
 
