@@ -39,7 +39,7 @@ export class Parser {
           "episodeDate": episode.modified,
           "title": episode.name,
           "description": "Episode " + episode.name
-            + " from Spanishland School, edited to remove the annoying dross.",
+            + " from Librivox, edited to quieten the louder parts.",
           "downloadLink": url + episode.urlencodedname
         };
         console.log(episodeLink);
