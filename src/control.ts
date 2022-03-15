@@ -13,8 +13,8 @@ export class Controller {
         let radioUruguayFeed = new RadioUruguayFeed();
         await radioUruguayFeed.updateFeed();
 
-        let espectadorFeed = new EspectadorFeed();
-        await espectadorFeed.updateFeed();
+        // let espectadorFeed = new EspectadorFeed();
+        // await espectadorFeed.updateFeed();
 
         let spanishlandFeed = new SpanishlandFeed();
         await spanishlandFeed.updateFeed();
