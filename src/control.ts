@@ -4,6 +4,7 @@ import { Feed } from "feed";
 import {RadioUruguayFeed } from './radiouruguay-feed';
 import {EspectadorFeed} from './espectador-feed';
 import {SpanishlandFeed} from './spanishland-feed';
+import {VillarrazaFeed} from './villarraza-feed';
 
 export class Controller {
 
@@ -17,6 +18,9 @@ export class Controller {
 
         let spanishlandFeed = new SpanishlandFeed();
         await spanishlandFeed.updateFeed();
+
+        let villarrazaFeed = new VillarrazaFeed();
+        await villarrazaFeed.updateFeed();
     }
 
 } // end of class controller
